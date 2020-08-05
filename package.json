@@ -1,0 +1,20 @@
+{
+  "name": "test-lwr-navigation",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "clean": "rm -rf dist",
+    "start": "node ./src/server/index.js"
+  },
+  "dependencies": {
+    "@webruntime/navigation": "0.30.11",
+    "@webruntime/server": "0.30.11",
+    "@webruntime/services": "0.30.11"
+  },
+  "devDependencies": {
+    "fs-extra": "^8.0.1",
+    "lwc": "1.2.2"
+  },
+  "author": "",
+  "license": "ISC"
+}

@@ -1,0 +1,21 @@
+{
+    "home": {
+        "path": "/",
+        "component": "hung/main"
+    },
+    "login": {
+        "path": "/login",
+        "component": "hung/loginrouter",
+        "exact": false
+    },
+    "forgot": {
+        "path": "/forgot",
+        "component": "hung/forgot",
+        "exact": false
+    },
+    "forgotresult": {
+        "path": "/forgotresult",
+        "component": "hung/forgotresult",
+        "exact": false
+    }
+}

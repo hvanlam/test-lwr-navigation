@@ -1,0 +1,21 @@
+{
+    "home": {
+        "path": "/",
+        "component": "hung/login"
+    },
+    "loginresult": {
+        "path": "/loginresult/:name",
+        "component": "hung/loginresult",
+        "exact": false
+    },
+    "loginsuccess": {
+        "path": "/loginsuccess/:name",
+        "component": "hung/loginsuccess",
+        "exact": false
+    },
+    "loginfailure": {
+        "path": "/loginfailure/:name",
+        "component": "hung/loginfailure",
+        "exact": false
+    }
+}

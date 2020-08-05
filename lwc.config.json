@@ -1,0 +1,3 @@
+{
+    "modules": ["src/client/modules", "@lwc/engine", "@lwc/wire-service", "@webruntime/navigation"]
+}
