@@ -55,6 +55,6 @@ This sample is an exercise to get familiar with declaratively and programmatical
      }
   ```   
      
-     Assuming your child/home component contains a &lt;webruntime-link path="/"&gt;, then this navigates to the main/home component, not the child/home.
+     Assuming your **child/home** component contains a &lt;webruntime-link path="/"&gt;, then this navigates to the **main/home** component, not the **child/home**.
      
 
