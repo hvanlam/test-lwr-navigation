@@ -17,7 +17,7 @@ This sample is an exercise to get familiar with declaratively and programmatical
 5. **forgot**, **forgotresult**: Also is used to illustrate declaratively and programmatically navigation.
 
 ### Lessons Learned:
-* For specifying route definition:
+* Route definition:
   * **path** attribute must start with '/', AND do not use numeric character in the path.  Otherwise on server start will get a LWR4015: Route data validation failed.
   * Similarly the route definition ID cannot contain numeric character, otherwise you will see the following validation error:
     > 1. Error: LWR4015: Route data validation failed: Route with id "none" from .json must have a valid "id" property
@@ -30,5 +30,31 @@ This sample is an exercise to get familiar with declaratively and programmatical
    > 404: Cannot find a view for route with id "undefined"
 * When the LWC contains a syntax or compile errors, the server will start but navigating to that component will result in:
    > VM22 app:8976 Error loading page contents: "LWR4016: Expected a route view component with a default export."
-
+* Another interesting point which requires abit of explanation:
+  * Two route definitions:
+     **main.json**:
+  ```
+     {
+         "home" : {
+             "path": "/"
+             "component": "main/home"
+          },
+          "child" : {
+             "path": "/child",
+             "component": "child/route"
+          }
+     }
+  ```
+     **child.json**:
+  ```   
+     {
+         "home" : {
+             "path": "/"
+             "component": "child/home"
+          }
+     }
+  ```   
+     
+     Assuming your child/home component contains a &lt;webruntime-link path="/"&gt;, then this navigates to the main/home component, not the child/home.
+     
 
